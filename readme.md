@@ -4,10 +4,13 @@ The idea came about when I started to investigate p5 as a possible method for cr
 
 p5's canvases and drawn elements are pixel-based, so warping them to my site's responsive design while maintaining their relative proportions took some doing, and (for the short term) a second JavaScript file (to account for some of the full-window functionality). So the example files, their designed outputs, and their constants are still formulated to meet the needs of my blog.
 
-#### Next steps
+## Next steps
 *See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps.*
 
 ## How it works
+
+
+#### Globally
 
 As of now, these are the **(currently global) variables** established within lines 5-15 of sketch.js.:
 
@@ -35,8 +38,8 @@ As of now, these are the **(currently global) variables** established within lin
 - `maxPxDensity` 
   Maximum display px density to account for.
   
+#### `function setup()`
 Within `function setup()` I define `var pE` as a **scalable pixel** in a way, which changes with JavaScript mediaquery-like if-statements (again, this is hyper-specific to my blog's design, and I'll need to consider pulling these breakpoints out into definable variables of their own for the library). `pE` goes on to help define the `prop` unit, equal to 1% of the width of the canvas at any given point. 
 
+#### `function draw()`
 `pE` is redefined in `function draw()` according to screen width breakpoints again, as well as whether the sketch is being viewed in full-window or not. Any drawn element's size values can be defined by their desired relative percentage to the canvas' width, as long as the value is multipled by `prop`, e.g. `ellipse(mouseX, mouseY, (10 * prop), (10 * prop))`.
-
-The `prop` unit can be multiplied times any 
