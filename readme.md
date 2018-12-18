@@ -4,15 +4,17 @@ The idea came about when I started to investigate p5 as a possible method for cr
 
 p5's canvases and drawn elements are pixel-based, so warping them to my site's responsive design while maintaining their relative proportions took some doing, and (for the short term) a second JavaScript file (to account for some of the full-window functionality). So the example files, their designed outputs, and their constants are still formulated to meet the needs of my blog.
 
+
 ## Next steps
-*See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps.*
+See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps.
+
+
 
 ## How it works
 
+#### Global `var`s
 
-#### Globally
-
-As of now, these are the **(currently global) variables** established within lines 5-15 of sketch.js.:
+As of now, these are the **(currently global) variables** established within lines 5-15 of sketch.js:
 
 - `cWProp` 
   Canvas' proportional width. Used within `function draw()` to maintain drawn-element-size-to-canvas-ratio, if desired. *Keep this defined as it is with* `var cWProp = 100;` *so the canvas can scale properly with screen _width_ changes.*
