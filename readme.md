@@ -6,7 +6,13 @@ p5's canvases and drawn elements are pixel-based, so warping them to my site's r
 
 
 ## Next steps
-See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps (adding more day by day).
+
+See the [Issues](https://github.com/liaprins/p5.responsive/issues) for more detail on planned next steps. Here's a high-level overview:
+
+- [ ] Genericize sample code (so it's not specific to my blog anymore)
+- [ ] Build full-window functionality with p5 instead fo relying on separate JS file
+- [ ] Learn more about building a library
+- [ ] Design ideal experience for using the library from p5 coder's perspective
 
 
 
