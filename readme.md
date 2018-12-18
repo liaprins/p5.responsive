@@ -6,7 +6,7 @@ p5's canvases and drawn elements are pixel-based, so warping them to my site's r
 
 
 ## Next steps
-See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps.
+See the [Issues](https://github.com/liaprins/p5.responsive/issues) for planned next steps (adding more day by day).
 
 
 
