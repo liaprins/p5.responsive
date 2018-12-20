@@ -50,8 +50,6 @@ function draw() {
 
     var sketchHolder = document.getElementById('sketch-holder');
 
-    textSize(32);
-
     // ESTABLISHING PROPORTIONAL SIZING UNIT RELATIVE TO CANVAS AT ANY GIVEN SCREENWIDTH, AND LIGHTBOX MODE VS NOT
 
     // "Is it being viewed in lightbox mode?"
@@ -62,28 +60,22 @@ function draw() {
             // portrait-ish
             if (((windowWidth - ltWPad) / (windowHeight - ltHPad)) > (cW / cH)) {
                 var pE = ((windowHeight - ltHPad) / cH);
-                text(pE * 642 + ' | lightbox + 1225 (canvas = 1000px tall)', 10, 30);
             } else { // landscape-ish
                 var pE = (ltMaxW / cW);
-                text(pE * 642 + ' | lightbox + 1225 (canvas = 300px tall)', 10, 30);
             }
         } else if (windowWidth >= 817) {
             // portrait-ish
             if (((windowWidth - ltWPad) / (windowHeight - ltHPad)) > (cW / cH)) {
                 var pE = ((windowHeight - ltHPad) / cH);
-                text(pE * 642 + ' | lightbox + 817 (canvas = 1000px tall)', 10, 30);
             } else { // landscape-ish
                 var pE = ((windowWidth - ltWPad) / cW);
-                text(pE * 642 + ' | lightbox + 817 (canvas = 300px tall)', 10, 30);
             }
         } else { // <817
             // portrait-ish
             if ((windowWidth / windowHeight) > (cW / cH)) {
                 var pE = (windowHeight / cH);
-                text(pE * 642 + ' | lightbox < 817 (canvas = 1000px tall)', 10, 30);
             } else { // landscape-ish
                 var pE = (windowWidth / cW);
-                text(pE * 642 + ' | lightbox < 817 (canvas = 300px tall)', 10, 30);
             }
         }
     } else { // no, not in lightbox mode
