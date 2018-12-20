@@ -29,8 +29,6 @@ See the [Issues](https://github.com/liaprins/p5.responsive/issues) for more deta
 
 ## Thorough, in-depth start!
 
-#### Global `var`s
-
 1. Download this project, open the folder, and drag the index.html file into a new browser window or tab.
 2. Open the js folder, and then open sketch.js with a code editor.
 3. Try changing the values of the variables in lines 5-15, which are described below. More specifically, try changing `cHProp` to experiment with various canvas aspect ratios.
@@ -38,6 +36,8 @@ See the [Issues](https://github.com/liaprins/p5.responsive/issues) for more deta
 5. Click the little "fullscreen" icon just below the canvas and to the right edge to open the canvas in full-window mode. Try full-window mode in various screen sizes, too (will need to refresh and re-open full-window mode with each screen resize, as of now).
 6. Within the `draw()` function, lines 57-87 define JavaScript-mediaqueries (that were needed for my blog's styles). As of now they need to stay there for the drawn elements to scale with the canvas proportionally (I will remove this dependency and/or genericize it soon, with better documentation). Build your sketch **below line 90**; if you want your drawn elements to remain static-sized in pixels and _not_ scale with the canvas, define their sizes and locations as you normally would.
 7. If _do want your drawn elements (or any of them) to scale proportionally with the canvas_, simply define their sizes and locations by percentages of the canvas' width, and multiply by `prop`. _In the example included, the circle is 10% of the canvas' width, so its size is defined as `(10 * prop), (10 * prop)`._
+
+#### Global `var`s
 
 As of now, these are the **(currently global) variables** established within lines 5-15 of sketch.js:
 
