@@ -22,7 +22,7 @@ See the [Issues](https://github.com/liaprins/p5.responsive/issues) for more deta
 
 1. Within sketch.js, change the value of `cHProp` to a number above 100 for a vertical canvas, below 100 for a horizontal canvas, or equal to 100 for a square canvas.
 
-2. Create your sketch within `function draw()` below line 90. To create drawn elements that will remain proportional to the canvas, size them as percentages of the canvas width (wherein canvas width = 100%), and multiply the numbers by the `prop` variable, e.g. `(7 * prop)`.
+2. Create your sketch within `function draw()` _below line 90_ (leave the code above line 90 as is for now, for best results). To create drawn elements that will remain proportional to the canvas, size them as percentages of the canvas width (wherein canvas width = 100%), and multiply the numbers by the `prop` variable, e.g. `(7 * prop)`.
 
 3. Try your sketch out on different screensizes and in full-window mode (by clicking the fullscreen icon below the canvas), refreshing the browser between resizes.
 
